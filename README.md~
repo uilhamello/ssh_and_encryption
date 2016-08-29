@@ -1,23 +1,21 @@
 Instalação
 
 Download via Github:
-<code> git clone git@github.com:uilhamello/ssh_and_encryption.git</code>
+git clone git@github.com:uilhamello/ssh_and_encryption.git
 
 Banco de dados
 
 - Crie o banco de dados caso não o tenha:
-   Ex: 
-   <code> create database ssh_encrypt </code>
+   Ex: create database ssh_encrypt
 
 
 - Execute o dump da pasta : database/dump.sql 
   Ex:
-<code>  mysql -u root -p ssh_encrypt < dump.sql </code>
+  mysql -u root -p ssh_encrypt < dump.sql
 
 - Edite as informações de conexão no arquivo config/database.php
 
 Exemplo:
-<code>
 "mysql_dev" => [
 	"default" => true,
 	"DRIVER" => "mysql",
@@ -25,8 +23,7 @@ Exemplo:
 	"DBNAME" => "database_name",
 	"USER" => "root",
 	"PASSWORD" => ""
-  ]
-</code>
+
 Pronto!
 
 
