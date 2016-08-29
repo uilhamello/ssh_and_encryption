@@ -1,0 +1,55 @@
+<div class="row">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-8">
+    <form method="post" action="{{URL_BASE}}">
+      <div class="form-group text-left">
+      <input type="hidden" name="module" value="crypt_text_action">
+      <input type="hidden" name="user_id" value="{{session_id}}">
+        <div class="radio">
+          <label>
+            <input type="radio" name="action" id="action_encript" value="encrypt" checked>
+            Criptografar
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="action" id="action_decript" value="decrypt">
+            Decriptografar
+          </label>
+        </div>
+        <div class="text" id="div_key_encryptedtext" style="display:none">
+          <label>
+            Key: 
+            <input type="text" name="key" id="key" value="" size="63">            
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="texto">Texto</label>
+        <textarea class="form-control" name="texto" id="texto" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>    
+  </div>
+</div>
+<div class="panel panel-success">
+  <div class="panel-heading text-left">Resultado</div>
+  <div class="panel-body text-left">
+    <p> 
+      <label>Texto Original:</label>
+     {{texto}}
+     </p>
+     <p> 
+        <label>Criptografado:</label>
+       {{encrypted}}
+     </p>
+     <p> 
+       <label>Descriptografado:</label>
+       {{decrypted}}
+     </p>
+     <p> 
+       <label>Chave:</label>
+       {{key}}
+     </p>
+  </div>
+</div>

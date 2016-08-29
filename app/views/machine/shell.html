@@ -1,0 +1,37 @@
+<style>
+#prompt{
+	background-color: #000;
+	color: #fff;
+	min-height: 300px;
+	max-height: 300px;
+	overflow: auto;
+	padding: 0px;
+	margin: 0px
+}
+
+#prompt input[type="text"], textarea {
+
+  background-color : #000; 
+  border-color : #000; 
+  border : 0; 
+
+}
+
+#prompt textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+</style>
+<div class="panel panel-info" id="prompt">
+  <div class="panel-heading text-left">Linux Shell - {{user}}@{{ip}}</div>
+  <div class="panel-body text-left">
+  	<div id="last_commandline"></div>
+    <span id='user_ip_command_line'>{{user}}@{{ip}}:</span>
+    <span id='cifrao_command_line'>$</span>
+    <input type="text" name="command" id="command">
+  </div>
+</div>
+<input type="hidden" name="machine" id="machine" value="{{id}}">
+<input type="hidden" name="current_command_position" id="current_command_position" value="0">

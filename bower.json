@@ -1,0 +1,21 @@
+{
+  "name": "teste_ssh_encrypt",
+  "authors": [
+    "Uilha Mello <williammello86@gmail.com>"
+  ],
+  "description": "teste de ssh e encrypt",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "datatables": "DataTables#^1.10.12"
+  }
+}

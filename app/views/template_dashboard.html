@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="public/bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="public/bower_components/datatables/media/css/dataTables.bootstrap.min.css">
+		<link rel="stylesheet" href="public/assets/css/main.css">
+		<title>SSH and Encryption Test - By WIll</title>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+			  <div class="jumbotron">
+				<div class="row">
+					<div class="col-sm-12 text-right">
+						<h4>Olá, {{session_name}}! <a class="btn btn-warning" href="{{URL_BASE}}/?module=logout">Logut</a></h4>
+					</div>
+				</div>
+			    <h1>Teste - SSH e Encrypt</h1> 
+			    <p></p> 
+			  </div>
+			</div>
+		</header>
+		<div class="container">
+           <div class="row">
+                <div class="col-sm-12 text-center">
+              	  {{message}}            
+                </div>
+            </div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+					  <div class="list-group">
+					    <a href="#" class="list-group-item active">Menu Principal</a>			
+					        <a href="{{URL_BASE}}/?module=list_connection_ssh" class="list-group-item"> 
+					        	<h5>Conexão SSH</h5>
+					        </a>
+					        <a href="{{URL_BASE}}/?module=crypt_text" class="list-group-item"> 
+					           <h5>Encriptografar Texto</h5>
+					        </a>
+					        <a href="{{URL_BASE}}/?module=upload_file_list" class="list-group-item"> 
+					        	<h5>Upload de Arquivo</h5>
+					        </a>
+					  </div>
+					</div>
+					<div class="col-sm-10 text-center ">
+						{{content}}
+					</div>
+				</div>
+			</div>
+		</div>	
+		<footer>
+		  <script src="public/bower_components/jquery/dist/jquery.min.js"></script>
+		  <script src="public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		  <script src="public/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+		  <script src="public/bower_components/datatables/media/js/dataTables.bootstrap.js"></script>
+		  <script src="public/assets/js/main.js"></script>
+		</footer>
+	</body>	
+</html>
