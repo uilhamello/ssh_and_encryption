@@ -5,8 +5,14 @@ git clone git@github.com:uilhamello/ssh_and_encryption.git
 
 Banco de dados
 
-- Execute o dump da pasta : database/dump20160829.sql ( o arquivo com a versão atual)
-  mysql -u username -p database_name < database/dump20160829.sql
+- Crie o banco de dados caso não o tenha:
+	create database ssh_encrypt
+  (o nome 'ssh_encrypt' é só uma sugestão, pode colar o que melhor para ti)
+
+- Execute o dump da pasta : database/dump.sql 
+  mysql -u [database_user] -p [new_database] < dump.sql
+  Ex:
+   mysql -u root -p ssh_encrypt < dump.sql
 
 - Edite as informações de conexão no arquivo config/database.php
 

@@ -1,8 +1,6 @@
-CREATE DATABASE  IF NOT EXISTS `mt4_will` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `mt4_will`;
 -- MySQL dump 10.13  Distrib 5.5.50, for debian-linux-gnu (x86_64)
 --
--- Host: 127.0.0.1    Database: mt4_will
+-- Host: localhost    Database: ssh_encrypt
 -- ------------------------------------------------------
 -- Server version	5.5.50-0ubuntu0.14.04.1
 
@@ -97,7 +95,7 @@ CREATE TABLE `user_files` (
   PRIMARY KEY (`id`),
   KEY `fk_user_files_1_idx` (`user_id`),
   CONSTRAINT `fk_user_files_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -124,7 +122,7 @@ CREATE TABLE `users` (
   `created_at` datetime DEFAULT NULL,
   `updated_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -133,6 +131,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (53,'William Mello','wmello','$2y$10$CJBmk6fvUdBXVPleAfNWxONa6f2eu1gy5RRBNgAjY2LOjomuJIn9y','2016-08-29 07:18:46',NULL);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -145,4 +144,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-08-29  6:43:06
+-- Dump completed on 2016-08-29  9:45:12
