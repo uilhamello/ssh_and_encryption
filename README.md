@@ -1,8 +1,25 @@
+Instalação
 
-Fluxo de Páginas
+Download via Github:
+git clone git@github.com:uilhamello/ssh_and_encryption.git
 
-- Toda requisição centralizada em 'index.php' na raiz do projeto.
-Através de 'index.php' é verificado o módulo que será requerido e incluido no 'content' da template.
+Banco de dados
+
+- Execute o dump da pasta : database/dump20160829.sql ( o arquivo com a versão atual)
+  mysql -u username -p database_name < database/dump20160829.sql
+
+- Edite as informações de conexão no arquivo config/database.php
+
+Exemplo:
+"mysql_dev" => [
+	"default" => true,
+	"DRIVER" => "mysql",
+	"HOST" => "localhost",
+	"DBNAME" => "database_name",
+	"USER" => "root",
+	"PASSWORD" => ""
+
+Pronto!
 
 
 Função 1

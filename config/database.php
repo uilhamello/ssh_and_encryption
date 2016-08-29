@@ -10,7 +10,7 @@ $LIB_XX_CONFIG_DB  = [
 					"default" => true,
 					"DRIVER" => "mysql",
 					"HOST" => "localhost",
-					"DBNAME" => "mt4_will",
+					"DBNAME" => "database_name",
 					"USER" => "root",
 					"PASSWORD" => ""
 				],
